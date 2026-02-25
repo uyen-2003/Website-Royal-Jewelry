@@ -1,0 +1,21 @@
+html body {
+  scroll-behavior: smooth;
+}
+html {
+  scroll-padding-top: 0px; /* Điều chỉnh khoảng cách từ đỉnh trang đến phần tử cuộn đến */
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+}
+
+#main {
+  width: 100%;
+}
+
+/* #main-body {
+    background-image: url("/Code/DoAn2/images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+   */

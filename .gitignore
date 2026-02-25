@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+._*
+
+# Logs
+*.log
+
+# Node (nếu có)
+node_modules/
+dist/
+build/
+
+# VS Code
+.vscode/
+.idea/
+
+# JetBrains
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Env
+.env

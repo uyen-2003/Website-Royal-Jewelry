@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white; /*add*/
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 50px;
+  height: 70px;
+  align-items: center;
+  background-color: #405151;
+}
+.logo {
+  flex: 1;
+}
+
+.menu {
+  flex: 3;
+  display: flex; /*menu ngang */
+  padding: 100px;
+}
+.menu > li {
+  padding: 0 12px;
+  position: relative;
+}
+.menu li a {
+  font-size: 12px;
+  font-weight: bold !important;
+  display: block;
+  line-height: 20px; /*giãn cách dòng của menu*/
+}
+.sub-menu {
+  position: absolute;
+  width: 200px; /* chiều rộng menu*/
+  border: 1px solid #ccc;
+
+  padding: 10px 0 10px 20px;
+
+  visibility: hidden;
+  top: 60px; /*khi chưa hover vào*/
+  transition: 0.1s;
+  z-index: 1;
+  background-color: #405151;
+}
+.sub-menu ul a {
+  font-weight: normal !important;
+  font-size: 12px !important;
+}
+.sub-menu ul {
+  padding-left: 5px;
+}
+.other {
+  flex: 1;
+  display: flex;
+  color: white;
+}
+.other > li {
+  padding: 0 12px;
+}
+.other > li:first-child {
+  position: relative;
+}
+.other > li:first-child input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  color: white;
+}
+/* kinh lup */
+.other > li:first-child i {
+  /* width: 100%; */
+  position: absolute;
+  right: 10px;
+}
+
+.menu > li:hover .sub-menu {
+  visibility: visible;
+  top: 44px;
+}

@@ -1,0 +1,120 @@
+
+.footer {
+  background-color: #c59993;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;   
+}
+  
+.footer h4 {
+  color: #333;
+}
+  
+.footer p {
+  color: #666;
+}
+  
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+  
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.contact {
+  color: rgba(27, 27, 27, 0.89); 
+}
+
+ul.list-unstyled {
+  padding-right: 20px;
+}
+
+.menu-footer li {
+  position: relative;
+  width: 165px;
+
+}
+
+.menu-footer li a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.menu-footer li>a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: #333;
+  transition: width 0.7s ease;
+}
+
+.menu-footer li>a:hover::after {
+  width: 100%;
+}
+
+.menu-footer > li > a {
+  color: #504f4f;
+  cursor: pointer;  
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  transition: color 0.3s ease;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.social-icons a:hover {
+  color: white;
+}
+
+.form-sign > h4 {
+  text-align: center;
+}
+
+.followus {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.form-sign {
+ 
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+}
+#subscribe {
+  position: relative;
+}
+
+#mc-embedded-subscribe-form {
+  position: relative;
+}
+
+.subscribe-email {
+  text-align: center;
+}
+
+.form-control {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  width: 220px;
+}
+.register {
+  position: absolute;
+  left: 120px;
+}
+
+p.copy-right {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 15px;
+}

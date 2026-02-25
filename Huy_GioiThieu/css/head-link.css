@@ -1,0 +1,108 @@
+#head-link {
+  height: 60px;
+  width: 100%;
+  background-color: #5193b3;
+  clear: both;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+.smooth-scroll {
+  transition: all 0.5s ease-in-out;
+}
+.smooth-scroll:hover {
+  color: blue; /* Tuỳ chỉnh màu sắc khi di chuột qua liên kết */
+}
+#group-introduce:active {
+  transition: all 0.5s ease-in-out;
+}
+#logo-headlink img {
+  padding: 5px 0px;
+  height: 50px;
+  display: block;
+  margin-left: 50px;
+  margin-right: auto;
+}
+#main-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 39px;
+}
+#main-menu li {
+  position: relative; /* tạo lăn chuột */
+}
+#main-menu li a {
+  color: white;
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+#main-menu ul.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #5193b3;
+  padding: 15px 0px;
+  list-style: none;
+  width: 220px;
+  border: 1px solid #61b2da;
+}
+#main-menu li:hover > ul.sub-menu {
+  display: block;
+  /* Thứ tự thực hiện, cao hơn ==> thực hiện trước */
+  z-index: 999;
+}
+#main-menu ul.sub-menu a {
+  padding: 10px 25px;
+  border-bottom: 1px solid #5193b3;
+}
+#main-menu ul.sub-menu li:hover > a {
+  border-bottom: 1px solid #365f74;
+}
+#main-menu ul.sub-menu li:last-child a {
+  border: none;
+}
+/* Thiết lập border khi hover */
+#main-menu > li > a {
+  position: relative;
+}
+#main-menu > li > a::before {
+  content: "";
+  height: 4px;
+  width: 0px;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #0c5a81;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+#main-menu > li:hover > a::before {
+  width: 100%;
+}
+#main-menu > li.has-child::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 10px 0px;
+}
+
+#main-menu li:hover > a {
+  color: black;
+}
+#main-menu .sub-menu > li:hover > a {
+  color: black;
+}
+#main-menu > li:hover.has-child::after {
+  color: black;
+}

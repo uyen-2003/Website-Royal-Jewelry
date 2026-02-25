@@ -1,0 +1,49 @@
+body #group {
+  background-color: #f8d49b;
+  padding: 0;
+  height: 400px;
+  margin-top: -21px;
+}
+body #table-group {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 720px;
+}
+table {
+  width: 100%;
+}
+table,
+td,
+th {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 6px 10px;
+}
+table thead th {
+  text-align: left;
+}
+.table.table-dark thead th {
+  background-color: #3e54d3;
+}
+.table.table-dark {
+  background-color: #4f80e2;
+}
+/* TÔ MÀU HÀNG THEO SỐ LẺ (ODD) CHẴN LÀ (EVEN)*/
+.table.table-hover tbody tr:nth-child(odd) {
+  background-color: #6895f1;
+}
+.table.table-hover tbody tr:hover {
+  background-color: rgb(254, 163, 163);
+  color: white;
+}
+/* TÔ MÀU CHỮ THEO SỐ HÀNG
+.table.table-hover tbody tr:nth-child(odd) {
+  color: aquamarine;
+} */

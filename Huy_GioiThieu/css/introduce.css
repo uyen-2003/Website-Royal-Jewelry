@@ -1,0 +1,36 @@
+#introduce {
+  background-color: #62c4c3;
+  height: 450px;
+}
+.box-introduce {
+  max-width: 960px;
+  height: 450px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+#box-text.text-introduce h1 {
+  text-align: center;
+  font-size: 35x;
+  line-height: 20px;
+  margin-left: 50px;
+  margin-top: 100px;
+  width: 520px;
+}
+#box-text.text-introduce p {
+  text-align: justify;
+  width: 20px;
+  margin-left: 90px;
+  margin-right: 80px;
+  width: 520px;
+}
+.img-introduce {
+  float: right;
+  margin-top: 35px;
+}
+.img-introduce img {
+  height: 300px;
+  margin-right: 100px;
+  padding: 30px 0px;
+}

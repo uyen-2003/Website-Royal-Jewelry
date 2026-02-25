@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang nhap</title>
+    <link rel="stylesheet" type="text/css" href="/Uyen_Account/css2/styleDangNhap.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="/Uyen_Account/js/dangnhap.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form class="login" onsubmit="return validateForm()">
+            <table width="100%" border="0" cellspacing="0" cellpadding="10" align="center" bgcolor="#7FFF00">
+                <tr>
+                    <td>
+                        <h3 align="center" style="color: black;">HAVE AN ACCOUNT?</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-control">
+                            <label for="username"></label>
+                            <input id="username" type="text" placeholder="Username" required onkeyup="validateForm()" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-control">
+                            <label for="password"></label>
+                            <input id="password" type="password" placeholder="Password" required
+                                onkeyup="validateForm()" />
+                            <!-- <div id="eye">
+                            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                        </div> -->
+                            <div id="eye">
+                                <i class="far fa-eye"></i>
+
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="text-left">
+                            <input type="checkbox" id="remember" name="remember" value="Remember me">
+                            <label for="remember" style="color: black;"> Remember me</label>
+                        </div>
+                        <div class="text-right">
+                            <a href="#" style="color: black;">Forgot password</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button id="formSubmit" type="submit" size="50"
+                            style="height: 40px; text-align: center; color: black;" onclick="loginUser()" disabled>
+                            <a href="/Giao_HomePage/HomePage (2).html" style="color: black;"> Sign in</a>
+                        </button></td>
+                </tr>
+                </tr>
+            </table>
+
+        </form>
+        <div class="signInWith">
+            <p class="w-100 text-center" style="color: black;">&mdash; Or Sign In With &mdash;</p>
+            <div class="social d-flex text-center">
+                <a href="#" class="px-2 py-2 mr-md-1 rounded" style="color: black;" onclick="loginWithFacebook()"><span
+                        class="ion-logo-facebook mr-2"></span> Facebook</a>
+                <a href="#" class="px-2 py-2 ml-md-1 rounded" style="color: black;" onclick="loginWithTwitter()"><span
+                        class="ion-logo-twitter mr-2"></span> Twitter</a>
+            </div>
+        </div>
+    </div>
+    <div id="notAccount">
+        <p>
+            Have not an account? Sign in
+            <a href="/Uyen_Account/form_DangKy.html">Here</a>
+        </p>
+
+    </div>
+</body>
+
+</html>

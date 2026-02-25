@@ -1,0 +1,42 @@
+#members {
+  height: 2250px;
+  width: 100%;
+  clear: both;
+  background-color: antiquewhite;
+}
+.container-members {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.member {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+#img-members img {
+  width: 300px;
+  margin: 60px auto;
+}
+#info-members {
+  width: 400px;
+  height: 300px;
+}
+#info-members p {
+  margin-top: 200px;
+  margin-right: 100px;
+}
+#thanhvien1 {
+  height: 425px;
+}
+#thanhvien2 {
+  height: 425px;
+}
+#thanhvien3 {
+  height: 425px;
+}
+#thanhvien4 {
+  height: 425px;
+}
+#thanhvien5 {
+  height: 425px;
+}

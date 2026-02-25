@@ -1,0 +1,12 @@
+#head {
+  height: 80px;
+  background-color: #e5efc1;
+}
+
+.img-logo {
+  padding: 5px 0px;
+  height: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
